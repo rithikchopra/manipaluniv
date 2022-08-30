@@ -59,7 +59,8 @@
     .leftSide{
       width:322px;
       height:219px;
-      background:#2C2760;
+    //   background:#2C2760;
+      background:linear-gradient(to right bottom, rgba(255,102,0, 1), rgba(238,48,36, 1));;
       padding-top:36px;
       border-radius:15px;
       display: flex;
@@ -79,10 +80,11 @@
   letter-spacing: 2.1px;
   text-transform: uppercase;
   
-  color: #ADA5FF;
+//   color: #ADA5FF;
+color: white;
   
   mix-blend-mode: normal;
-  opacity: 0.7;
+//   opacity: 0.7;
       }
       
       h3{
@@ -135,6 +137,7 @@
             padding-left: 0;
             background:#FFFFFF;
             box-shadow: 0px 23px 23px -5px #6961BD;
+            box-shadow: 0px 23px 23px -5px #a1a1a1;
             border-radius: 15px;    
             padding:0 5%;      
             overflow-y: scroll;
@@ -222,8 +225,10 @@
         
         width:161px;
         height:47px;
-        background: #2C2760;
-  box-shadow: 0px 15px 20px -10px rgba(71, 62, 166, 0.552989);
+        // background: #2C2760;
+        background:linear-gradient(to right bottom, rgba(255,102,0, 1), rgba(238,48,36, 1));;
+//   box-shadow: 0px 15px 20px -10px rgba(71, 62, 166, 0.552989);
+box-shadow: 0px 15px 20px -10px rgba(161, 161, 161, 0.553);
   border-radius: 28.5px;
         display:flex;
         align-items:center;
@@ -253,4 +258,14 @@
   }
   .rightSide::-webkit-scrollbar{
     display: none;
+}
+@media only screen and (max-width : 1024px) {
+    .leftSide{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .cardPopup .rightSide{
+        min-width: 100%;
+        max-width: 100%;
+    }
 }

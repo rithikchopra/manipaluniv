@@ -7,27 +7,28 @@ import manipalUnivCampusResized from '../Assets/manipalUnivCampusResized.png'
 import manipalUnivCampusResized2 from '../Assets/manipalUnivCampusResized2.png'
 import ilovemanipalResizedpng from '../Assets/ilovemanipalResizedpng.png' 
 import Popup from './Popup'
-import { useEffect } from 'react'
-import $ from 'jquery';
+import Form from './Form'
+// import { useEffect } from 'react'
+// import $ from 'jquery';
 
 function Homepage({displayOverlay}) {
-    useEffect(()=>{
-        $('#prev').on('click', function() {
-            $('.row').animate({
-              scrollLeft: '-=100'
-            }, 300, 'swing');
-          });
+    // useEffect(()=>{
+    //     $('#prev').on('click', function() {
+    //         $('.row').animate({
+    //           scrollLeft: '-=100'
+    //         }, 300, 'swing');
+    //       });
           
-          $('#next').on('click', function() {
-            $('.row').animate({
-              scrollLeft: '+=100'
-            }, 300, 'swing');
-          });
-    });
+    //       $('#next').on('click', function() {
+    //         $('.row').animate({
+    //           scrollLeft: '+=100'
+    //         }, 300, 'swing');
+    //       });
+    // });
 
   return (
     <div style={{display: displayOverlay===true? "none":""}}>
-
+        <Form/>
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
             <label for="navi-toggle" class="navigation__button">
@@ -61,96 +62,12 @@ function Homepage({displayOverlay}) {
                     <span class="headingPrimary--main">Manipal University</span>
                     <span class="headingPrimary--sub">T2S</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Contact Us</a>
+                {/* <a href="#" class="btn btn--white btn--animated">Contact Us</a> */}
             </div>
         </header>
 
         <main>
-            <section class="section-about">
-                <div class="u-center-text u-margin-bottom-large">
-                    <h2 class="heading-secondary">
-                        Exciting courses for the Next-Gen
-                    </h2>
-                </div>
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <h3 class="heading-tertiary u-margin-bottom-small">
-                            You Are going to fall in love with our courses
-                        </h3>
-                        <p class="paragraph">
-                             We follow choice-based credit system, where students are free to choose their courses. Our curriculum gets revamped from time to time through feedbacks from Students and Industry.
-                        </p>
-                        <h3 class="heading-tertiary u-margin-bottom-small">
-                            Learning experience like you never had before
-                        </h3>
-                        <p class="paragraph">
-                        We are committed to excellence with a holistic approach and have consistently maintained highest standards. We also earnestly endeavour to be among the best and utilize opputunities for the overall improvment of the higher education and training. 
-                        </p>
-                        <a href="#" class="btn-text">Learn more &rarr;</a>
-                    </div>
-                    <div class="col-1-of-2">
-                        <div class="composition">
-                            <img src={ilovemanipalResizedpng} alt="Photo 1"
-                                class="composition__photo composition__photo--p1" />
-                            <img src={manipalUnivCampusResized2} alt="Photo 2"
-                                class="composition__photo composition__photo--p2" />
-                            <img src={manipalUnivCampusResized} alt="Photo 3"
-                                class="composition__photo composition__photo--p3" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="features">
-                <div class="row">
-                    <div class="col-1-of-4">
-                        <div class="feature-card">
-                            <i class="feature-card__icon icon-basic-world"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">
-                                Best Industrial Oppurtunities
-                            </h3>
-                            <p class="feature-card__text">
-                                Great companies like Axis Bank, IDFC Bank, HDFC Bank, Tech Mahindra with great packages upon completion.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-1-of-4">
-                        <div class="feature-card">
-                            <i class="feature-card__icon icon-basic-compass"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">
-                                Attend Online
-                            </h3>
-                            <p class="feature-card__text">
-                                Study from Home at your own comfort.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-1-of-4">
-                        <div class="feature-card">
-                            <i class="feature-card__icon icon-basic-map"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">
-                                Find your Way
-                            </h3>
-                            <p class="feature-card__text">
-                                Make it possible to enjoy quality-education without even leaving home.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-1-of-4">
-                        <div class="feature-card">
-                            <i class="feature-card__icon icon-basic-heart"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">
-                                Start building your IT skills
-                            </h3>
-                            <p class="feature-card__text">
-                               Industry demanding courses such as SalesForce, Java, Fullstack program .etc are available!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-tours" id="section-tours">
+        <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="heading-secondary">
                         Most popular tours
@@ -345,10 +262,10 @@ function Homepage({displayOverlay}) {
                             </div>
                         </div>
                     </div>
-                <div id="nav">
+                {/* <div id="nav">
                     <div id="prev">Prev</div>
                     <div id="next">Next</div>
-                </div>
+                </div> */}
                 </div>
                 {/* <div class="u-center-text u-margin-bottom-huge">
                     <a href="#section-tours" class="btn btn--green">
@@ -356,6 +273,95 @@ function Homepage({displayOverlay}) {
                     </a>
                 </div> */}
             </section>
+
+            <section class="features">
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="feature-card">
+                            <i class="feature-card__icon icon-basic-world"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                Best Industrial Oppurtunities
+                            </h3>
+                            <p class="feature-card__text">
+                                Great companies like Axis Bank, IDFC Bank, HDFC Bank, Tech Mahindra with great packages upon completion.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-card">
+                            <i class="feature-card__icon icon-basic-compass"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                Attend Online
+                            </h3>
+                            <p class="feature-card__text">
+                                Study from Home at your own comfort.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-card">
+                            <i class="feature-card__icon icon-basic-map"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                Find your Way
+                            </h3>
+                            <p class="feature-card__text">
+                                Make it possible to enjoy quality-education without even leaving home.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-card">
+                            <i class="feature-card__icon icon-basic-heart"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                Start building your IT skills
+                            </h3>
+                            <p class="feature-card__text">
+                               Industry demanding courses such as SalesForce, Java, Fullstack program .etc are available!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-about">
+                <div class="u-center-text u-margin-bottom-large">
+                    <h2 class="heading-secondary">
+                        Exciting courses for the Next-Gen
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            You Are going to fall in love with our courses
+                        </h3>
+                        <p class="paragraph">
+                             We follow choice-based credit system, where students are free to choose their courses. Our curriculum gets revamped from time to time through feedbacks from Students and Industry.
+                        </p>
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            Learning experience like you never had before
+                        </h3>
+                        <p class="paragraph">
+                        We are committed to excellence with a holistic approach and have consistently maintained highest standards. We also earnestly endeavour to be among the best and utilize opputunities for the overall improvment of the higher education and training. 
+                        </p>
+                        {/* <a href="#" class="btn-text">Learn more &rarr;</a> */}
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="composition">
+                            <img src={ilovemanipalResizedpng} alt="Photo 1"
+                                class="composition__photo composition__photo--p1" />
+                            <img src={manipalUnivCampusResized2} alt="Photo 2"
+                                class="composition__photo composition__photo--p2" />
+                            <img src={manipalUnivCampusResized} alt="Photo 3"
+                                class="composition__photo composition__photo--p3" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+
+
+
+
 
             <section class="section-stories">
                 <div class="bg-video">
@@ -405,9 +411,9 @@ function Homepage({displayOverlay}) {
                         </div>
                     </div>
                 </div>
-                <div class="u-center-text u-margin-top-huge">
+                {/* <div class="u-center-text u-margin-top-huge">
                     <a href="#" class="btn-text">Read all stories &rarr;</a>
-                </div>
+                </div> */}
             </section>
 
             <section class="section-book">
