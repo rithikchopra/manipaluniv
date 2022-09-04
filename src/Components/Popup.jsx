@@ -1,4 +1,5 @@
 import React from 'react'
+import RegistrationPage from './RegistrationPage'
 
 function Popup() {
   return (
@@ -46,7 +47,7 @@ function Popup() {
                     <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
                 </div>
                             <div class="popup__right"> */}
-                    <a href="#section-tours" class="popup__close">&times;</a> 
+                    <a href="#section-tours" class="popup__close navigation__button">&times;</a> 
                     <div class="cardPopup">
                     <div class="leftSide">
                         <label>COURSE</label>
@@ -82,7 +83,7 @@ function Popup() {
                     <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
                 </div>
                             <div class="popup__right"> */}
-                    <a href="#section-tours" class="popup__close">&times;</a> 
+                    <a href="#section-tours" class="popup__close navigation__button">&times;</a> 
                     <div class="cardPopup">
                     <div class="leftSide">
                         <label>COURSE</label>
@@ -120,7 +121,7 @@ function Popup() {
                     <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
                 </div>
                             <div class="popup__right"> */}
-                    <a href="#section-tours" class="popup__close">&times;</a> 
+                    <a href="#section-tours" class="popup__close navigation__button">&times;</a> 
                     <div class="cardPopup">
                     <div class="leftSide">
                         <label>COURSE</label>
@@ -156,7 +157,7 @@ function Popup() {
                     <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
                 </div>
                             <div class="popup__right"> */}
-                    <a href="#section-tours" class="popup__close">&times;</a> 
+                    <a href="#section-tours" class="popup__close navigation__button">&times;</a> 
                     <div class="cardPopup">
                     <div class="leftSide">
                         <label>COURSE</label>
@@ -192,7 +193,7 @@ function Popup() {
                     <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
                 </div>
                             <div class="popup__right"> */}
-                    <a href="#section-tours" class="popup__close">&times;</a> 
+                    <a href="#section-tours" class="popup__close navigation__button">&times;</a> 
                     <div class="cardPopup">
                     <div class="leftSide">
                         <label>COURSE</label>
@@ -218,6 +219,9 @@ function Popup() {
                         </div>                      
                     </div>                  
                     </div>
+                </div>
+                <div class="popup" id="popup7">
+                    <RegistrationPage/>
                 </div>
             </div>
   )

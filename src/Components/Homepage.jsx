@@ -6,6 +6,10 @@ import T2SLogopng from '../Assets/T2SLogopng.png'
 import manipalUnivCampusResized from '../Assets/manipalUnivCampusResized.png'
 import manipalUnivCampusResized2 from '../Assets/manipalUnivCampusResized2.png'
 import ilovemanipalResizedpng from '../Assets/ilovemanipalResizedpng.png' 
+import T2SLogo from '../Assets/T2SLogo.jpeg' 
+import ManipalGlobalLogo from '../Assets/ManipalGlobalLogo.jpeg' 
+import ProfilePictureLogo from '../Assets/ProfilePictureLogo.jpg' 
+import AxisBankLogosvg from '../Assets/AxisBankLogo.svg' 
 import Popup from './Popup'
 import Form from './Form'
 // import { useEffect } from 'react'
@@ -45,17 +49,24 @@ function Homepage({displayOverlay}) {
                     <li class="navigation__item"><a href="#popup4" class="navigation__link"> <span>04</span> Tech Mahindra - SalesForce T2S</a></li>
                     <li class="navigation__item"><a href="#popup5" class="navigation__link"> <span>05</span> Axis - FullStack T2S</a></li>
                     <li class="navigation__item"><a href="#popup6" class="navigation__link"> <span>06</span> IDFC - Java T2S</a></li>
+                    <li class="navigation__item"><a href="#popup7" class="navigation__link"> <span></span>Register Here</a></li>
                 </ul>
             </nav>
 
         </div>
 
         <header class="header">
+            <div className="header-flex-box">
             <div class="header__logoBox">
                 <img src={ManipalLogopng} alt="logo" class="header__logo" />
             </div>
             <div className='header__logoBox1'>
-                <img src={T2SLogopng} alt="logo" class="header__logo" />
+                {/* <img src={T2SLogopng} alt="logo" class="header__logo" /> */}
+                <img src={T2SLogo} alt="logo" class="header__logo" />
+            </div>
+            <div class="header__logoBox2">
+                <img src={ManipalGlobalLogo} alt="logo" class="header__logo" />
+            </div>
             </div>
             <div class="header__textBox">
                 <h1 class="headingPrimary">
@@ -77,7 +88,7 @@ function Homepage({displayOverlay}) {
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
-                                <div class="card__picture card__picture-1">
+                                <div class="card__picture card__picture-1" >
 
                                 </div>
                                 <h4 class="card__heading">
@@ -378,9 +389,9 @@ function Homepage({displayOverlay}) {
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img class="story__img" src="https://raw.githubusercontent.com/yashfalke77/Natours-project/master/images/nat-8.jpg" alt="Person on a tour" />
+                            <img class="story__img" src={ProfilePictureLogo} alt="Person" />
                             <figcaption class="story__caption">
-                                Mery Smith
+                                Person 1
                             </figcaption>
                         </figure>
                         <div class="story__text">
@@ -396,9 +407,9 @@ function Homepage({displayOverlay}) {
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img class="story__img" src="https://raw.githubusercontent.com/yashfalke77/Natours-project/master/images/nat-9.jpg" alt="Person on a tour" />
+                            <img class="story__img" src={ProfilePictureLogo} alt="Person" />
                             <figcaption class="story__caption">
-                                Mery Smith
+                                Person 2
                             </figcaption>
                         </figure>
                         <div class="story__text">
@@ -462,10 +473,11 @@ function Homepage({displayOverlay}) {
         </main>
 
         <footer class="footer">
-            <div class="footer__logo-box" >
+            <div class="footer__logo-box" style={{display:"flex", justifyContent:"space-around"}} >
                 {/* <!-- srcset responsive images for one for low resolution and one for high resolution --> */}
-                <img src={ManipalLogopng} style={{paddingRight:"5%"}}/>
-                <img src={T2SLogopng} style={{width:"10%"}}/>
+                <img src={ManipalLogopng} />
+                <img src={T2SLogo} style={{width:"10%"}}/>
+                <img src={ManipalGlobalLogo} style={{width:"12%"}}/>
             </div>
             {/* <div class="row">
                 <div class="col-1-of-2">
