@@ -463,7 +463,9 @@ function Homepage({displayOverlay}) {
                                 </div> */}
 
                                 <div class="form__group">
-                                    <button type="submit" class="btn btn--green">Next Step &rarr;</button>
+                                    {/* <button type="submit" class="btn btn--green"> */}
+                                        <a type="submit" class="btn btn--green" href="#popup7">Next Step &rarr;</a>
+                                        {/* </button> */}
                                 </div>
                             </form>
                         </div>
