@@ -32,7 +32,7 @@ function Homepage({displayOverlay}) {
 
   return (
     <div style={{display: displayOverlay===true? "none":""}}>
-        <Form/>
+        {/* <Form/> */}
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
             <label for="navi-toggle" class="navigation__button">
@@ -476,8 +476,11 @@ function Homepage({displayOverlay}) {
             <div class="footer__logo-box" style={{display:"flex", justifyContent:"space-around"}} >
                 {/* <!-- srcset responsive images for one for low resolution and one for high resolution --> */}
                 <img src={ManipalLogopng} />
-                <img src={T2SLogo} style={{width:"10%"}}/>
-                <img src={ManipalGlobalLogo} style={{width:"12%"}}/>
+                <img src={T2SLogo} />
+                <img src={ManipalGlobalLogo} />
+                <span class="logo sub-page-logo-mobile" style={{fontFamily:"Varela Round", color:"white", fontSize:"40px"}}>
+        LUCID&nbsp;WORLD        
+        </span>
             </div>
             {/* <div class="row">
                 <div class="col-1-of-2">
