@@ -1,17 +1,19 @@
 import React from 'react'
 import RegistrationPage from './RegistrationPage'
+import ScollDownButton from './ScollDownButton'
 
 function Popup() {
   return (
-    <div>
+      <div>
         <div class="popup" id="popup1">
+            <ScollDownButton />
             {/* <div class="popup__content">
                 <div class="popup__left">
-                    <img src="images/nat-8.jpg" alt="Tour Photo" class="popup__img" />
-                    <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
+                <img src="images/nat-8.jpg" alt="Tour Photo" class="popup__img" />
+                <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
                 </div>
-                            <div class="popup__right"> */}
-                    <a href="#section-tours" class="popup__close navigation__button">&times;</a> 
+            <div class="popup__right"> */}
+                    <a href="#section-tours" class="popup__close">&times;</a> 
                     <div class="cardPopup">
                     <div class="leftSide">
                         <label>COURSE</label>
@@ -33,7 +35,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>Program Fees : ₹ 99,000 + GST</span></li>
                         </ul>
                         <div class="box">
-                        <div class="btn">Continue</div>
+                        <a href="#popup7" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>
@@ -41,13 +43,14 @@ function Popup() {
                
                
                 <div class="popup" id="popup2">
+                <ScollDownButton />
             {/* <div class="popup__content">
                 <div class="popup__left">
                     <img src="images/nat-8.jpg" alt="Tour Photo" class="popup__img" />
                     <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
                 </div>
                             <div class="popup__right"> */}
-                    <a href="#section-tours" class="popup__close navigation__button">&times;</a> 
+                    <a href="#section-tours" class="popup__close ">&times;</a> 
                     <div class="cardPopup">
                     <div class="leftSide">
                         <label>COURSE</label>
@@ -69,7 +72,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>Program Fees : ₹ 2,00,000 + GST</span></li>
                         </ul>
                         <div class="box">
-                        <div class="btn">Continue</div>
+                        <a href="#popup7" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>
@@ -77,13 +80,14 @@ function Popup() {
 
 
                 <div class="popup" id="popup3">
+                <ScollDownButton />
             {/* <div class="popup__content">
                 <div class="popup__left">
                     <img src="images/nat-8.jpg" alt="Tour Photo" class="popup__img" />
                     <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
                 </div>
                             <div class="popup__right"> */}
-                    <a href="#section-tours" class="popup__close navigation__button">&times;</a> 
+                    <a href="#section-tours" class="popup__close ">&times;</a> 
                     <div class="cardPopup">
                     <div class="leftSide">
                         <label>COURSE</label>
@@ -107,7 +111,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>T&amp;C : No legal cases in a court of law, no relatives working in the Bank or enrolled in an exiting program</span></li>
                         </ul>
                         <div class="box">
-                        <div class="btn">Continue</div>
+                        <a href="#popup7" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>
@@ -115,13 +119,14 @@ function Popup() {
 
 
                 <div class="popup" id="popup4">
+                <ScollDownButton />
             {/* <div class="popup__content">
                 <div class="popup__left">
                     <img src="images/nat-8.jpg" alt="Tour Photo" class="popup__img" />
                     <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
                 </div>
                             <div class="popup__right"> */}
-                    <a href="#section-tours" class="popup__close navigation__button">&times;</a> 
+                    <a href="#section-tours" class="popup__close ">&times;</a> 
                     <div class="cardPopup">
                     <div class="leftSide">
                         <label>COURSE</label>
@@ -143,7 +148,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>Program Fees : ₹ 1,00,000 + GST</span></li>
                         </ul>
                         <div class="box">
-                        <div class="btn">Continue</div>
+                        <a href="#popup7" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>
@@ -151,13 +156,14 @@ function Popup() {
 
 
                 <div class="popup" id="popup5">
+                <ScollDownButton />
             {/* <div class="popup__content">
                 <div class="popup__left">
                     <img src="images/nat-8.jpg" alt="Tour Photo" class="popup__img" />
                     <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
                 </div>
                             <div class="popup__right"> */}
-                    <a href="#section-tours" class="popup__close navigation__button">&times;</a> 
+                    <a href="#section-tours" class="popup__close ">&times;</a> 
                     <div class="cardPopup">
                     <div class="leftSide">
                         <label>COURSE</label>
@@ -179,7 +185,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>Program Fees : ₹ 2,50,000 + GST</span></li>
                         </ul>
                         <div class="box">
-                        <div class="btn">Continue</div>
+                        <a href="#popup7" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>
@@ -187,13 +193,14 @@ function Popup() {
 
 
                 <div class="popup" id="popup6">
+                <ScollDownButton />
             {/* <div class="popup__content">
                 <div class="popup__left">
                     <img src="images/nat-8.jpg" alt="Tour Photo" class="popup__img" />
                     <img src="images/nat-9.jpg" alt="Tour Photo" class="popup__img" />
                 </div>
                             <div class="popup__right"> */}
-                    <a href="#section-tours" class="popup__close navigation__button">&times;</a> 
+                    <a href="#section-tours" class="popup__close ">&times;</a> 
                     <div class="cardPopup">
                     <div class="leftSide">
                         <label>COURSE</label>
@@ -215,7 +222,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>Program Fees : ₹ 2,00,000 + GST</span></li>
                         </ul>
                         <div class="box">
-                        <div class="btn">Continue</div>
+                        <a href="#popup7" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>

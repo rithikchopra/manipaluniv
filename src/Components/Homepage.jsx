@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Styles/Homepage.css'
 import '../Styles/PopupStyles.scss'
 import ManipalLogopng from '../Assets/ManipalLogopng.png'
@@ -9,13 +9,27 @@ import ilovemanipalResizedpng from '../Assets/ilovemanipalResizedpng.png'
 import T2SLogo from '../Assets/T2SLogo.jpeg' 
 import ManipalGlobalLogo from '../Assets/ManipalGlobalLogo.jpeg' 
 import ProfilePictureLogo from '../Assets/ProfilePictureLogo.jpg' 
-import AxisBankLogosvg from '../Assets/AxisBankLogo.svg' 
+import AxisLogoPngNew from '../Assets/AxisLogoPngNew.png' 
+import IdfcBankLogo from '../Assets/IDFCBankLogo.png'
+import HdfcLogo from '../Assets/HdfcBankLogo.png' 
 import Popup from './Popup'
 import Form from './Form'
 // import { useEffect } from 'react'
-// import $ from 'jquery';
+import $ from 'jquery';
 
 function Homepage({displayOverlay}) {
+    useEffect(()=>{
+        let hamburger = document.getElementsByClassName('navigation__button');
+        $(window).scroll(function() {     
+            var scroll = $(window).scrollTop();
+            if (scroll > 0) {
+                $(hamburger).addClass("active");
+            }
+            else {
+                $(hamburger).removeClass("active");
+            }
+        });
+    },[])
     // useEffect(()=>{
     //     $('#prev').on('click', function() {
     //         $('.row').animate({
@@ -40,7 +54,7 @@ function Homepage({displayOverlay}) {
                     &nbsp;
                 </span>
             </label>
-            <div class="navigation__background"></div>
+            <div class="navigation__background" ></div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#popup1" class="navigation__link"> <span>01</span> Axis Bank - Java T2S</a></li>
@@ -81,7 +95,7 @@ function Homepage({displayOverlay}) {
         <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="heading-secondary">
-                        Most popular tours
+                        Most Popular Courses
                     </h2>
                 </div>
                 <div class="row">
@@ -89,7 +103,7 @@ function Homepage({displayOverlay}) {
                         <div class="card">
                             <div class="card__side card__side--front">
                                 <div class="card__picture card__picture-1" >
-
+                                    <img src={AxisLogoPngNew} className='bank-logo-picture' style={{paddingTop:"5%"}}/>
                                 </div>
                                 <h4 class="card__heading">
                                     <span class="card__heading-span card__heading-span--1">Axis Bank - Java</span>
@@ -110,7 +124,7 @@ function Homepage({displayOverlay}) {
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">₹99,000 + GST</p>
                                     </div>
-                                    <a href="#popup1" class="btn btn--white">Book Now</a>
+                                    <a href="#popup1" class="btn btn--white">Enroll Now</a>
                                 </div>
                             </div>
                         </div>
@@ -120,6 +134,7 @@ function Homepage({displayOverlay}) {
                             <div class="card">
                                 <div class="card__side card__side--front">
                                     <div class="card__picture card__picture-2">
+                                    <img src={IdfcBankLogo} className='bank-logo-picture'/>
 
                                     </div>
                                     <div class="card__heading">
@@ -141,7 +156,7 @@ function Homepage({displayOverlay}) {
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">₹2,00,000 + GST</p>
                                         </div>
-                                        <a href="#popup2" class="btn btn--white">Book Now</a>
+                                        <a href="#popup2" class="btn btn--white">Enroll Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +167,7 @@ function Homepage({displayOverlay}) {
                             <div class="card">
                                 <div class="card__side card__side--front">
                                     <div class="card__picture card__picture-3">
-
+                                        <img src={HdfcLogo} className='bank-logo-picture' style={{paddingTop:"8%"}}/>
                                     </div>
                                     <div class="card__heading">
                                         <span class="card__heading-span card__heading-span--3">HDFC Bank - VRM</span>
@@ -173,7 +188,7 @@ function Homepage({displayOverlay}) {
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">₹99,000 + GST</p>
                                         </div>
-                                        <a href="#popup3" class="btn btn--white">Book Now</a>
+                                        <a href="#popup3" class="btn btn--white">Enroll Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +220,7 @@ function Homepage({displayOverlay}) {
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">₹1,00,000 + GST</p>
                                         </div>
-                                        <a href="#popup4" class="btn btn--white">Book Now</a>
+                                        <a href="#popup4" class="btn btn--white">Enroll Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +230,7 @@ function Homepage({displayOverlay}) {
                         <div class="card">
                             <div class="card__side card__side--front">
                                 <div class="card__picture card__picture-1">
-
+                                    <img src={AxisLogoPngNew} className='bank-logo-picture' style={{paddingTop:"5%"}}/>
                                 </div>
                                 <h4 class="card__heading">
                                     <span class="card__heading-span card__heading-span--1">Axis Bank - Full Stack</span>
@@ -236,7 +251,7 @@ function Homepage({displayOverlay}) {
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">₹2,50,000 + GST</p>
                                     </div>
-                                    <a href="#popup5" class="btn btn--white">Book Now</a>
+                                    <a href="#popup5" class="btn btn--white">Enroll Now</a>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +261,7 @@ function Homepage({displayOverlay}) {
                             <div class="card">
                                 <div class="card__side card__side--front">
                                     <div class="card__picture card__picture-2">
-
+                                    <img src={IdfcBankLogo} className='bank-logo-picture'/>
                                     </div>
                                     <div class="card__heading">
                                         <span class="card__heading-span card__heading-span--2">IDFC Bank - SalesForce</span>
@@ -267,7 +282,7 @@ function Homepage({displayOverlay}) {
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">₹2,00,000 + GST</p>
                                         </div>
-                                        <a href="#popup6" class="btn btn--white">Book Now</a>
+                                        <a href="#popup6" class="btn btn--white">Enroll Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -291,7 +306,7 @@ function Homepage({displayOverlay}) {
                         <div class="feature-card">
                             <i class="feature-card__icon icon-basic-world"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                Best Industrial Oppurtunities
+                                Best Industrial Opportunities
                             </h3>
                             <p class="feature-card__text">
                                 Great companies like Axis Bank, IDFC Bank, HDFC Bank, Tech Mahindra with great packages upon completion.
@@ -302,10 +317,10 @@ function Homepage({displayOverlay}) {
                         <div class="feature-card">
                             <i class="feature-card__icon icon-basic-compass"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                Attend Online
+                                Cent Percent Placement
                             </h3>
                             <p class="feature-card__text">
-                                Study from Home at your own comfort.
+                                Hundred Percent Placement guaranteed with Provisional Offer Letter and Training for all Students and Freshers.
                             </p>
                         </div>
                     </div>
@@ -313,10 +328,10 @@ function Homepage({displayOverlay}) {
                         <div class="feature-card">
                             <i class="feature-card__icon icon-basic-map"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                Find your Way
+                                Find your Way - Attend Online
                             </h3>
                             <p class="feature-card__text">
-                                Make it possible to enjoy quality-education without even leaving home.
+                                Make it possible to study quality-education without even leaving comfort of your home and get Premium packages. 
                             </p>
                         </div>
                     </div>
@@ -327,7 +342,7 @@ function Homepage({displayOverlay}) {
                                 Start building your IT skills
                             </h3>
                             <p class="feature-card__text">
-                               Industry demanding courses such as SalesForce, Java, Fullstack program .etc are available!
+                               Industry demanding courses such as SalesForce, Java, Fullstack program and Virtual Relationship Manager are available!
                             </p>
                         </div>
                     </div>
@@ -351,7 +366,7 @@ function Homepage({displayOverlay}) {
                             Learning experience like you never had before
                         </h3>
                         <p class="paragraph">
-                        We are committed to excellence with a holistic approach and have consistently maintained highest standards. We also earnestly endeavour to be among the best and utilize opputunities for the overall improvment of the higher education and training. 
+                        We are committed to excellence with a holistic approach and have consistently maintained highest standards. We also earnestly endeavour to be among the best and utilize opportunities for the overall improvement of the higher education and training. 
                         </p>
                         {/* <a href="#" class="btn-text">Learn more &rarr;</a> */}
                     </div>
@@ -368,12 +383,6 @@ function Homepage({displayOverlay}) {
                 </div>
             </section>
             
-
-
-
-
-
-
             <section class="section-stories">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
@@ -383,7 +392,7 @@ function Homepage({displayOverlay}) {
                     </video>
                 </div>
                 <div class="u-center-text u-margin-bottom-large">
-                    <h2 class="heading-secondary">We make people geniuenly happy</h2>
+                    <h2 class="heading-secondary">We make people genuinely happy</h2>
                 </div>
 
                 <div class="row">
@@ -414,10 +423,11 @@ function Homepage({displayOverlay}) {
                         </figure>
                         <div class="story__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">
-                                Wow my life is completely different now !!
+                                My life is completely different now after getting paid Premium package at Bank!!
                             </h3>
                             <p>
-                                I really enjoyed taking this course.  To be honest, there is nothing that I disliked about the course. It had the most work to do by far and that is what it made it most-enjoyable.
+                                {/* I really enjoyed taking this course.  To be honest, there is nothing that I disliked about the course. It had the most work to do by far and that is what it made it most-enjoyable. */}
+                                I was promised about 100% placement and I received it too. I'm really glad to be working as a part of such big tier organisation. I had never imagined to be here as a fresher.
                             </p>
                         </div>
                     </div>
@@ -477,7 +487,7 @@ function Homepage({displayOverlay}) {
         <footer class="footer">
             <div class="footer__logo-box" style={{display:"flex", justifyContent:"space-around"}} >
                 {/* <!-- srcset responsive images for one for low resolution and one for high resolution --> */}
-                <img src={ManipalLogopng} />
+                {/* <img src={ManipalLogopng} /> */}
                 <img src={T2SLogo} />
                 <img src={ManipalGlobalLogo} />
                 <span class="logo sub-page-logo-mobile" style={{fontFamily:"Varela Round", color:"white", fontSize:"40px"}}>
