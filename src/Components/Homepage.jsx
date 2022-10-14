@@ -45,7 +45,7 @@ function Homepage({displayOverlay}) {
     // });
 
   return (
-    <div style={{display: displayOverlay===true? "none":""}}>
+    <div className='home-main-body-padding'>
         {/* <Form/> */}
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
@@ -57,13 +57,13 @@ function Homepage({displayOverlay}) {
             <div class="navigation__background" ></div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#popup1" class="navigation__link"> <span>01</span> Axis Bank - Java T2S</a></li>
-                    <li class="navigation__item"><a href="#popup2" class="navigation__link"> <span>02</span> IDFC - SalesForce T2S</a></li>
-                    <li class="navigation__item"><a href="#popup3" class="navigation__link"> <span>03</span> HDFC - VRM T2S</a></li>
-                    <li class="navigation__item"><a href="#popup4" class="navigation__link"> <span>04</span> Tech Mahindra - SalesForce T2S</a></li>
-                    <li class="navigation__item"><a href="#popup5" class="navigation__link"> <span>05</span> Axis - FullStack T2S</a></li>
-                    <li class="navigation__item"><a href="#popup6" class="navigation__link"> <span>06</span> IDFC - Java T2S</a></li>
-                    <li class="navigation__item"><a href="#popup7" class="navigation__link"> <span></span>Register Here</a></li>
+                    <li class="navigation__item"><a href="/AxisBankDeputyManagerIT" class="navigation__link"> <span>01</span> Axis Bank - Java T2S</a></li>
+                    <li class="navigation__item"><a href="/IDFCBankSoftwareDeveloper" class="navigation__link"> <span>02</span> IDFC - SalesForce T2S</a></li>
+                    <li class="navigation__item"><a href="/HDFCVirtualRelationshipManager" class="navigation__link"> <span>03</span> HDFC - VRM T2S</a></li>
+                    <li class="navigation__item"><a href="/TechMahindraSalesforce" class="navigation__link"> <span>04</span> Tech Mahindra - SalesForce T2S</a></li>
+                    <li class="navigation__item"><a href="/AxisBankFullStack" class="navigation__link"> <span>05</span> Axis - FullStack T2S</a></li>
+                    <li class="navigation__item"><a href="/IDFCFullStack" class="navigation__link"> <span>06</span> IDFC - Java T2S</a></li>
+                    <li class="navigation__item"><a href="https://forms.gle/6mzLg1xHVGtL4Une8" class="navigation__link"> <span></span>Register Here</a></li>
                 </ul>
             </nav>
 
@@ -71,9 +71,9 @@ function Homepage({displayOverlay}) {
 
         <header class="header">
             <div className="header-flex-box">
-            <div class="header__logoBox">
+            {/* <div class="header__logoBox">
                 <img src={ManipalLogopng} alt="logo" class="header__logo" />
-            </div>
+            </div> */}
             <div className='header__logoBox1'>
                 {/* <img src={T2SLogopng} alt="logo" class="header__logo" /> */}
                 <img src={T2SLogo} alt="logo" class="header__logo" />
@@ -84,8 +84,10 @@ function Homepage({displayOverlay}) {
             </div>
             <div class="header__textBox">
                 <h1 class="headingPrimary">
-                    <span class="headingPrimary--main">Manipal University</span>
-                    <span class="headingPrimary--sub">T2S</span>
+                {/* <span className='mobile-spacer'> </span> */}
+                    <span class="headingPrimary--main">Manipal<span className='spacer'>&nbsp;</span>Global Skills Academy</span>
+                    <span class="headingPrimary--sub">&amp;</span>
+                    <span class="headingPrimary--sub">Talent 2 Success</span>
                 </h1>
                 {/* <a href="#" class="btn btn--white btn--animated">Contact Us</a> */}
             </div>
@@ -124,7 +126,7 @@ function Homepage({displayOverlay}) {
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">₹99,000 + GST</p>
                                     </div>
-                                    <a href="#popup1" class="btn btn--white">Enroll Now</a>
+                                    <a href="/AxisBankDeputyManagerIT" class="btn btn--white">Enroll Now</a>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +158,7 @@ function Homepage({displayOverlay}) {
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">₹2,00,000 + GST</p>
                                         </div>
-                                        <a href="#popup2" class="btn btn--white">Enroll Now</a>
+                                        <a href="/IDFCBankSoftwareDeveloper" class="btn btn--white">Enroll Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +190,7 @@ function Homepage({displayOverlay}) {
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">₹99,000 + GST</p>
                                         </div>
-                                        <a href="#popup3" class="btn btn--white">Enroll Now</a>
+                                        <a href="/HDFCVirtualRelationshipManager" class="btn btn--white">Enroll Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +222,7 @@ function Homepage({displayOverlay}) {
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">₹1,00,000 + GST</p>
                                         </div>
-                                        <a href="#popup4" class="btn btn--white">Enroll Now</a>
+                                        <a href="/TechMahindraSalesforce" class="btn btn--white">Enroll Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +253,7 @@ function Homepage({displayOverlay}) {
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">₹2,50,000 + GST</p>
                                     </div>
-                                    <a href="#popup5" class="btn btn--white">Enroll Now</a>
+                                    <a href="/AxisBankFullStack" class="btn btn--white">Enroll Now</a>
                                 </div>
                             </div>
                         </div>
@@ -282,7 +284,7 @@ function Homepage({displayOverlay}) {
                                             <p class="card__price-only">Only</p>
                                             <p class="card__price-value">₹2,00,000 + GST</p>
                                         </div>
-                                        <a href="#popup6" class="btn btn--white">Enroll Now</a>
+                                        <a href="/IDFCFullStack" class="btn btn--white">Enroll Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -474,7 +476,8 @@ function Homepage({displayOverlay}) {
 
                                 <div class="form__group">
                                     {/* <button type="submit" class="btn btn--green"> */}
-                                        <a type="submit" class="btn btn--green" href="#popup7">Next Step &rarr;</a>
+                                        {/* <a type="submit" class="btn btn--green" href="#popup7">Next Step &rarr;</a> */}
+                                        <a type="submit" class="btn btn--green" href="https://forms.gle/6mzLg1xHVGtL4Une8">Next Step &rarr;</a>
                                         {/* </button> */}
                                 </div>
                             </form>

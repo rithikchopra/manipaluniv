@@ -35,7 +35,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>Program Fees : ₹ 99,000 + GST</span></li>
                         </ul>
                         <div class="box">
-                        <a href="#popup7" className="btn">Continue</a>
+                        <a href="https://forms.gle/6mzLg1xHVGtL4Une8" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>
@@ -72,7 +72,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>Program Fees : ₹ 2,00,000 + GST</span></li>
                         </ul>
                         <div class="box">
-                        <a href="#popup7" className="btn">Continue</a>
+                        <a href="https://forms.gle/6mzLg1xHVGtL4Une8" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>
@@ -111,7 +111,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>T&amp;C : No legal cases in a court of law, no relatives working in the Bank or enrolled in an exiting program</span></li>
                         </ul>
                         <div class="box">
-                        <a href="#popup7" className="btn">Continue</a>
+                        <a href="https://forms.gle/6mzLg1xHVGtL4Une8" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>
@@ -148,7 +148,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>Program Fees : ₹ 1,00,000 + GST</span></li>
                         </ul>
                         <div class="box">
-                        <a href="#popup7" className="btn">Continue</a>
+                        <a href="https://forms.gle/6mzLg1xHVGtL4Une8" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>
@@ -185,7 +185,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>Program Fees : ₹ 2,50,000 + GST</span></li>
                         </ul>
                         <div class="box">
-                        <a href="#popup7" className="btn">Continue</a>
+                        <a href="https://forms.gle/6mzLg1xHVGtL4Une8" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>
@@ -222,7 +222,7 @@ function Popup() {
                             <li><i class="fas fa-check"></i><span>Program Fees : ₹ 2,00,000 + GST</span></li>
                         </ul>
                         <div class="box">
-                        <a href="#popup7" className="btn">Continue</a>
+                        <a href="https://forms.gle/6mzLg1xHVGtL4Une8" className="btn">Continue</a>
                         </div>                      
                     </div>                  
                     </div>

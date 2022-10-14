@@ -1,3 +1,17 @@
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      overflow-x: hidden;
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      overflow-x: hidden;
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      overflow-x: hidden;
+      font-size: 75%; } }
 
 /* 
 DESKTOP FIRST APPROACH
@@ -41,29 +55,22 @@ $breakpoints argument choices:
   label.active{
     visibility: visible;
   }
+  .mobile-spacer{
+    display: none;
+  }
+  .header-flex-box div img{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
   /* .form__group a{
     text-decoration: none;
   } */
 
-html {
-  font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
-    html {
-      overflow-x: hidden;
-      font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      overflow-x: hidden;
-      font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      overflow-x: hidden;
-      font-size: 75%; } }
 
-body {
+.home-main-body-padding {
   font-family: 'Gilroy', sans-serif;
   font-weight: 500;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   line-height: 1.7;
   /* color: #777; */
   color: black;
@@ -71,7 +78,7 @@ body {
   box-sizing: border-box; 
 overflow-x: hidden;}
   @media only screen and (max-width: 56.25em) {
-    body {
+    .home-main-body-padding {
       padding: 0rem; } }
 
 ::selection {
@@ -124,11 +131,11 @@ overflow-x: hidden;}
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  margin-bottom: 0rem; }
   .headingPrimary--main {
     display: block;
     font-size: 6rem;
-    letter-spacing: 3.5rem;
+    letter-spacing: 1.75rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -136,11 +143,14 @@ overflow-x: hidden;}
 		animation-iteration-count: 3; */ }
     @media only screen and (max-width: 37.5em) {
       .headingPrimary--main {
-        letter-spacing: 1rem;
+        letter-spacing: 0.5rem;
         font-size: 5rem; } }
+        @media only screen and (max-width: 1024px) {
+          .headingPrimary--main {
+            font-size: 4rem; } }
   .headingPrimary--sub {
     display: block;
-    font-size: 2rem;
+    font-size: 3.5rem;
     letter-spacing: 1.5rem;
     font-weight: 500;
     animation: moveInRight 1s ease-out; }
@@ -381,7 +391,10 @@ overflow-x: hidden;}
     background-size: cover;
     height: 23rem;
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
+    border-top-right-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
     .card__picture-1 {
       /* background-image: url("../Assets/AxisBankLogo.svg"), linear-gradient(to right bottom, #ff00809d, #ff006ac2); */
       /* background-color: #861f41; */
@@ -742,7 +755,7 @@ overflow-x: hidden;}
     display: flex;
     justify-content: space-around;
     padding-top: 5px;
-    padding-right: 110px;
+    /* padding-right: 110px; */
   }
   .header__logoBox{
     padding-right: 100px;
@@ -894,18 +907,18 @@ overflow-x: hidden;}
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
+  top: -6.5rem;
   right: 6.5rem;
   background-image: linear-gradient(to right bottom, rgba(255,102,0,1), rgba(238,48,36,1));;
   z-index: 2;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
-      top: 4.5rem;
+      top: -4.5rem;
       right: 4.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
-      top: 3.5rem;
+      top: -3.5rem;
       right: 3.5rem; } }
 
 .navigation__nav {
@@ -1057,6 +1070,15 @@ overflow-x: hidden;}
         width: 100%; } }
 
         @media only screen and (max-width : 1024px) {
+          .navigation__background {
+            top: -8.5rem;
+             }
+             .spacer{
+              /* display: none; */
+             }
+             .mobile-spacer{
+              display: block;
+             }
             .row {
                 display: block;
               overflow-x:hidden;
