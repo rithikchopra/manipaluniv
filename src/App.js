@@ -8,6 +8,7 @@ import TechMahindra from './Components/TechMahindra';
 import HDFCBank from './Components/HDFCBank';
 import AxisBankSubPage2 from './Components/AxisBankSubPage2';
 import IDFCSalesforce1 from './Components/IDFCSalesforce1';
+import SundaramFinance from './Components/SundaramFinance';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/IDFCBankSoftwareDeveloper" element={<IDFCSalesforce1/>}/>
         <Route path="/TechMahindraSalesforce" element={<TechMahindra/>}/>
         <Route path="/HDFCVirtualRelationshipManager" element={<HDFCBank/>}/>
+        <Route path="/SundaramFinanceJavaFullStack" element={<SundaramFinance/>}/>
         {/* <Route path="/AxisBankFullStack" element={<AxisBankSubPage1/>}/> */}
         {/* <Route exact path="/a" render={() => {window.location.href="./axisbank.html"}} /> */}
         </Routes>
