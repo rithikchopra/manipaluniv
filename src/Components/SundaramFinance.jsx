@@ -337,7 +337,7 @@ function SundaramFinance() {
                 type="button"
                 className="npfWidgetButton npfWidget-57096262b94a8fbd0e3db331dbe53706"
               >
-                <a href='https://forms.gle/6mzLg1xHVGtL4Une8'>Register Now</a>
+                <a href='https://forms.gle/ezUMgtzBWpAJ8HJN8'>Register Now</a>
               </button>
             </div>
           </div>
@@ -790,7 +790,7 @@ function SundaramFinance() {
           </div>
           <div className="widget item-absolute  " id="element-474">
             <a
-              href="https://forms.gle/6mzLg1xHVGtL4Une8"
+              href="https://forms.gle/ezUMgtzBWpAJ8HJN8"
               id="link-pd1o8p4dgl"
               className="onpage-link btn    item-block"
               data-at="button"
